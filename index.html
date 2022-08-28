@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Persian Kitten</title>
+</head>
+<body>
+    <!-- ========================== Navbar Section ======================== -->
+    <div class="navbar">
+        <div class="left-nav">
+            <img src="./images/logo.png" alt="Logo" loading="lazy">
+            <h1 class="logo-text">Persian Kittens</h1>
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- ========================== Carousel Section ======================== -->
+    <div class="carousel" id="home">
+        <video id="carousel-video" autoplay muted loop>
+          <source src="./images/carousel-video.mp4" type="video/mp4">  
+          Your browser does not support the video tag.
+        </video>
+        <h2 class="c-heading">Welcome Guys <span>!!</span></h2>
+        <p class="c-text">We sell Persian cat's and kitten's, you're the cat's meow! 🐱</p>
+        <!-- <p class="c-text">There's no better time to play than right now, right Meow-ow! 🐱</p> -->
+        <div class="scroll-down">
+            <p class="sd-text">Scroll Down</p>
+            <i class="fas fa-angle-double-down fa-2x fa-bounce arr-down"></i>
+        </div>
+    </div>
+    <!-- ========================== Gallery Section ======================== -->
+    <section class="section" id="gallery">
+        <h3 class="sec-title" data-title="Gallery">Gallery</h3>
+        <div class="sec-container gallery-sec">
+            <div class="sec-col">
+                <img src="./images/cat-img-1.jpeg" alt="Cat Image">
+                <img src="./images/cat-img-2.jpg" alt="Cat Image">
+                <img src="./images/cat-img-1.jpeg" alt="Cat Image">
+            </div>
+            <div class="sec-col">
+                <img src="./images/cat-img-2.jpg" alt="Cat Image">
+                <img src="./images/cat-img-1.jpeg" alt="Cat Image">
+                <img src="./images/cat-img-1.jpeg" alt="Cat Image">
+            </div>
+            <div class="sec-col">
+                <img src="./images/cat-img-3.jpg" alt="Cat Image">
+                <img src="./images/cat-img-4.jpg" alt="Cat Image">
+                <img src="./images/cat-img-5.jpg" alt="Cat Image">
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <h3 class="sec-title" data-title="Contact">Contact</h3>
+        <div class="sec-container contact-sec">
+                <div class="left-contact-sec">
+                    <form action="https://formsubmit.co/5a255bf1845ddf18a6e2f38a69f7a992" method="POST" class='contact-form'>
+                        <div class="form-group">
+                            <p class="error" id='err-name'></p>
+                            <div class="form-group-input">
+                                <input type="text" class="focusAnim" name="name" id="name" required="required" autocomplete="off">
+                                <span>Full Name</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="error" id='err-email'></p>
+                            <div class="form-group-input">
+                                <input type="email" class="focusAnim" name="email" id="email" required="required" autocomplete="off">
+                                <span>Email</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="error" id='err-message'></p>
+                            <div class="form-group-input">
+                                <textarea class="focusAnim" name="message" id="message" required="required" autocomplete="off"></textarea>
+                                <span>Your Message</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class='submitBtn' id='submit' onClick="handleFormSubmit()">Send  Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right-contact-sec">
+                    <div class="c-r-contact">
+                        <a href="tel:7406959839" class="c-r-title">
+                            <div class="c-r-icon"><i class="fas fa-phone-alt fa-2x fa-shake socialIcon"></i></div>
+                            <p class="c-r-title-icon">Call Me</p>
+                            <p class="c-r-title-val">7406959839 / <wbr>6364252056</p>
+                        </a>
+                    </div>
+                    <div class="c-r-contact">
+                        <a href="mailto:mohammedsaqibbca62@gmail.com" target="_blank" class="c-r-title">
+                            <div class="c-r-icon"><i class="fas fa-envelope fa-2x fa-shake socialIcon"></i></div>
+                            <p class="c-r-title-icon">Email</p>
+                            <p class="c-r-title-val">mohammedsaqibbca62<wbr>@gmail<wbr>.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+     <!-- ========================== Footer Section ======================== -->
+     <section class="footer-section">
+        <div class="footer-container">
+            <i class="far fa-copyright fa-2x fa-fade footerIcon"></i>
+            <p class="footer-text">All Rights Reserved To <wbr/>Persian <wbr/>Kittens</p>
+        </div>
+    </section>
+    <!-- ========================== Go Up Button ======================== -->
+    <div class="go-up-container" id="go-up">
+        <i class="fa-solid fa-arrow-up fa-2x arrowUpIcon"></i>
+        <i class="fa-solid fa-arrow-up fa-2x arrowUpIcon"></i>
+    </div>
+    <script src="./script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+</body>
+</html>
