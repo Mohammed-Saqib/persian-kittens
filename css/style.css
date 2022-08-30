@@ -446,7 +446,7 @@ body{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 3rem 0rem 0rem 3rem;
-    box-shadow: 0 0 10px var(--black-color);
+    box-shadow: 0 0 10px var(--primaryColor);
 }
 .form-group{
     width: 100%;
@@ -582,7 +582,7 @@ body{
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
-    box-shadow: 0 0 10px var(--black-color);
+    box-shadow: 0 0 10px var(--primaryColor);
 }
 .c-r-icon{
     width: 5rem;
@@ -875,6 +875,7 @@ body{
     }
     .contact-sec{
         flex-direction: column;
+        gap: 3rem;
     }
     .left-contact-sec{
         width: 100%;
