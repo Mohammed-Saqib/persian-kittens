@@ -1,3 +1,8 @@
+// ================ Loader Coding =====================  //
+window.addEventListener('load', () => {
+    const loader = document.querySelector('body');
+    loader.classList.remove('active');
+})
 // ================ NavBar Coding =====================  //
 const navIcon = document.querySelector('.nav-icon');
 const menu = document.querySelector('.right-nav');
@@ -11,6 +16,14 @@ window.addEventListener('scroll', function (){
 });
 // ================ Carousel Coding =====================  //
 document.getElementById('carousel-video').playbackRate = .3;
+window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+    })
+});
 // ====================== Contact Coding ======================
 function handleFormSubmit(){
     const errorName = document.getElementById('err-name');

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="apple-touch-icon" href="./images/logo.png" />
+    <!-- --- font-awesome library ----  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <!-- --- AOS Library --- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Persian Kittens | Persian Cats | Persian Kittens Sales In Bangalore</title>
     <meta name="title" content="Persian Kittens | Persian Cats | Persian Kittens Sales In Bangalore">
@@ -18,7 +21,25 @@
     <meta property="og:site_name" content="Persian Kittens">
     <meta name="author" content="Mohammed Saqib">
 </head>
-<body>
+<body class="active">
+    <!-- ========================== loader Section ======================== -->
+    <div class="loader-section">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+        </div>
+        <p>Persian <b>Kitten</b></p>
+    </div>
     <!-- ========================== Navbar Section ======================== -->
     <div class="navbar">
         <div class="left-nav">
@@ -44,49 +65,49 @@
           <source src="./images/carousel-video.mp4" type="video/mp4">  
           Your browser does not support the video tag.
         </video>
-        <h2 class="c-heading">Welcome Guys <span>!!</span></h2>
-        <p class="c-text">We sell Persian cat's and kitten's, you're the cat's meow! 🐱</p>
+        <h2 class="c-heading" data-aos="fade-up" data-aos-anchor-placement="top-center">Welcome Guys <span>!!</span></h2>
+        <p class="c-text" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="300">We sell Persian cat's and kitten's, you're the cat's meow! 🐱</p>
         <!-- <p class="c-text">There's no better time to play than right now, right Meow-ow! 🐱</p> -->
-        <a href="#gallery" class="scroll-down">
+        <a href="#gallery" class="scroll-down" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
             <p class="sd-text">Scroll Down</p>
             <i class="fas fa-angle-double-down fa-2x fa-bounce arr-down"></i>
         </a>
     </div>
     <!-- ========================== Conatct Icons Section ======================== -->
     <div class="social-icons">
-        <a href="https://wa.me/7406959839" target="_blank">
+        <a href="https://wa.me/7406959839" target="_blank" data-aos="zoom-in" data-aos-anchor-placement="center-bottom">
             <i class="fa-brands fa-whatsapp fa-2x fa-shake s-icons"></i>
         </a>
-        <a href="tel:7406959839">
+        <a href="tel:7406959839" data-aos="zoom-in" data-aos-anchor-placement="center-bottom">
             <i class="fas fa-phone-alt fa-2x fa-shake s-icons"></i>
         </a>
     </div>
     <!-- ========================== Gallery Section ======================== -->
     <section class="section" id="gallery">
-        <h3 class="sec-title" data-title="Gallery">Gallery</h3>
+        <h3 class="sec-title" data-title="Gallery" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Gallery</h3>
         <div class="sec-container gallery-sec">
             <div class="sec-col">
-                <img src="./images/cat-img-5.jpeg" alt="Cat Image">
-                <img src="./images/cat-img-2.jpg" alt="Cat Image">
-                <img src="./images/cat-img-3.jpg" alt="Cat Image">
+                <img src="./images/cat-img-5.jpeg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+                <img src="./images/cat-img-2.jpg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+                <img src="./images/cat-img-3.jpg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
             </div>
             <div class="sec-col">
-                <img src="./images/cat-img-4.jpg" alt="Cat Image">
-                <img src="./images/cat-img-1.jpeg" alt="Cat Image">
-                <img src="./images/cat-img-6.jpeg" alt="Cat Image">
+                <img src="./images/cat-img-4.jpg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+                <img src="./images/cat-img-1.jpeg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+                <img src="./images/cat-img-6.jpeg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
             </div>
             <div class="sec-col">
-                <img src="./images/cat-img-7.jpeg" alt="Cat Image">
-                <img src="./images/cat-img-8.jpeg" alt="Cat Image">
-                <img src="./images/cat-img-9.jpeg" alt="Cat Image">
-                <img src="./images/cat-img-10.jpeg" alt="Cat Image">
+                <img src="./images/cat-img-7.jpeg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+                <img src="./images/cat-img-8.jpeg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+                <img src="./images/cat-img-9.jpeg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+                <img src="./images/cat-img-10.jpeg" alt="Cat Image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
             </div>
         </div>
     </section>
     <section class="section" id="contact">
-        <h3 class="sec-title" data-title="Contact">Contact</h3>
+        <h3 class="sec-title" data-title="Contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Contact</h3>
         <div class="sec-container contact-sec">
-                <div class="left-contact-sec">
+                <div class="left-contact-sec" data-aos="zoom-in">
                     <form action="https://formsubmit.co/5a255bf1845ddf18a6e2f38a69f7a992" method="POST" class='contact-form'>
                         <div class="form-group">
                             <p class="error" id='err-name'></p>
@@ -115,14 +136,14 @@
                     </form>
                 </div>
                 <div class="right-contact-sec">
-                    <div class="c-r-contact">
+                    <div class="c-r-contact" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
                         <a href="tel:7406959839" class="c-r-title">
                             <div class="c-r-icon"><i class="fas fa-phone-alt fa-2x fa-shake socialIcon"></i></div>
                             <p class="c-r-title-icon">Call Me</p>
                             <p class="c-r-title-val">7406959839 / <wbr>6364252056</p>
                         </a>
                     </div>
-                    <div class="c-r-contact">
+                    <div class="c-r-contact" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
                         <a href="mailto:mohammedsaqibbca62@gmail.com" target="_blank" class="c-r-title">
                             <div class="c-r-icon"><i class="fas fa-envelope fa-2x fa-shake socialIcon"></i></div>
                             <p class="c-r-title-icon">Email</p>
@@ -134,7 +155,7 @@
     </section>
      <!-- ========================== Footer Section ======================== -->
      <section class="footer-section">
-        <div class="footer-container">
+        <div class="footer-container" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
             <i class="far fa-copyright fa-2x fa-fade footerIcon"></i>
             <p class="footer-text">All Rights Reserved To <wbr/>Persian <wbr/>Kittens</p>
         </div>
@@ -146,5 +167,6 @@
     </div>
     <script src="./script/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

@@ -34,6 +34,10 @@ html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
+@font-face {
+    font-family: Stylish;
+    src: url(../fonts/LeckerliOne-Regular.ttf);
+}
 body{
     width: 100vw;
     min-height: 100vh;
@@ -46,9 +50,121 @@ body{
     -ms-user-select: none;
     background-color: var(--bg-color);
 }
-@font-face {
-    font-family: Stylish;
-    src: url(../fonts/LeckerliOne-Regular.ttf);
+/* =================== Loader Coding ===================== */
+.loader-section{
+    display: none;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+}
+body.active .loader-section{
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    z-index: 1000 !important;
+    background-color: var(--bg-color);
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.active .loader-section .loader{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    animation:  rot 12s linear infinite;
+    -ms-animation:  rot 12s linear infinite;
+    -moz-animation:  rot 12s linear infinite;
+    -webkit-animation:  rot 12s linear infinite;
+    -o-animation:  rot 12s linear infinite;
+}
+body.active .loader-section p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: var(--primaryHover);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: stylish;
+}
+.loader-section p b{
+    font-weight: 700;
+    font-family: stylish;
+    color: var(--primaryColor);
+    text-shadow: 0 0 10px var(--primaryColor),
+    0 0 20px var(--primaryColor),
+    0 0 30px var(--primaryColor),
+    0 0 40px var(--primaryColor);
+}
+.loader span{
+    position: absolute;
+    inset: 0;
+    transform: rotate(calc(30deg * var(--i)));
+    -ms-transform: rotate(calc(30deg * var(--i)));
+    -moz-transform: rotate(calc(30deg * var(--i)));
+    -webkit-transform: rotate(calc(30deg * var(--i)));
+    -o-transform: rotate(calc(30deg * var(--i)));
+}
+.loader span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primaryHover);
+    opacity: .5;
+}
+.loader span:nth-child(3n + 3):before{
+    opacity: 1;
+    background-color: var(--primaryColor);
+    box-shadow: 0 0 10px var(--primaryColor),
+    0 0 20px var(--primaryColor),
+    0 0 30px var(--primaryColor),
+    0 0 40px var(--primaryColor);
+    transform-origin: 75px;  /* loader width is 150px i.e 150 / 2 = 75px */
+    -ms-transform-origin: 75px; 
+    -moz-transform-origin: 75px; 
+    -webkit-transform-origin: 75px; 
+    -o-transform-origin: 75px;
+    animation: animateSquare 1s linear infinite;
+    -ms-animation: animateSquare 1s linear infinite;
+    -moz-animation: animateSquare 1s linear infinite;
+    -webkit-animation: animateSquare 1s linear infinite;
+    -o-animation: animateSquare 1s linear infinite;
+}
+@keyframes animateSquare {
+    0%, 25%{
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+    }
+    75%, 95%, 100%{
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+    }
+}
+@-webkit-keyframes animateSquare {
+    0%, 25%{
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+    }
+    75%, 95%, 100%{
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+    }
 }
 /* =================== NavBar Coding ===================== */
 .navbar{
@@ -77,7 +193,6 @@ body{
     -moz-transition: .3s ease-in-out;
     -ms-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
-    z-index: 1000;
 }
 .left-nav{
     /* outline: 1px solid; */
